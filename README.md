@@ -18,7 +18,7 @@ MTECH_KU
 │   ├── embedding_generator.py
 │   ├── init.py
 │   ├── pdf_extractor.py
-│   ├── PROSPECTUS FOR ADMISSION TO M.Tech. PROGRAMMES.pdf
+│   ├── .pdf
 │   └── text_chunker.py
 ├── generation
 │   ├── init.py
@@ -54,7 +54,7 @@ MTECH_KU
 
 Setup Environment
 
-cd /MTECH_KU
+cd /file_name
 conda create -n chatbot_env python=3.9.21
 conda activate chatbot_env
 pip install -r requirements.txt
@@ -67,13 +67,13 @@ Run the Full System (3 Terminals)
 
 Terminal 1: RASA Core
 
-cd /MTECH_KU/rasa_layer
+cd /file_name/rasa_layer
 conda activate chatbot_env
 rasa run  --cors "*" 
 
 Terminal 2: RASA Action Server  
 
-cd /MTECH_KU/rasa_layer/actions
+cd /file_name/rasa_layer/actions
 conda activate chatbot_env
 rasa run actions 
 
