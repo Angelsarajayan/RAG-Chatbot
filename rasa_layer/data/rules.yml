@@ -1,0 +1,26 @@
+version: "3.1"
+
+rules:
+  - rule: Handle any user query smartly
+    steps:
+      - intent: ask_faq  
+      - action: action_smart_router
+
+
+  - rule: Handle fallback with RAG  
+    steps:
+      - intent: nlu_fallback
+      - action: action_smart_router
+
+  - rule: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+
+

@@ -1,0 +1,19 @@
+# Environment files
+.env
+.env.*
+
+# Virtual environments
+venv/
+env/
+.venv/
+.envrc
+
+# VS Code settings
+.vscode/
+
+# Cache
+.cache/
+*.bak
+*.swp
+__pycache__/
+*.py[cod]
