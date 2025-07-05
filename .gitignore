@@ -17,4 +17,4 @@ env/
 *.swp
 __pycache__/
 *.py[cod]
-.rasa/cache
+.rasa/cache/
